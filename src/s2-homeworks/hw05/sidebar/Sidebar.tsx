@@ -3,7 +3,6 @@ import {NavLink} from 'react-router-dom'
 import s from './Sidebar.module.css'
 import {PATH} from '../Pages'
 import closeIcon from './closeOutline.svg'
-import path from "path";
 
 type PropsType = {
     open: boolean
@@ -33,7 +32,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-pre-junior-link'}
                         to={PATH.PRE_JUNIOR}
                         onClick={handleClose}
-                        className={(navData) => navData.isActive ? s.active : "" }
+                        className={({isActive}) => isActive ? s.active : "" }
                        // делает студент
                     >
                         Pre-junior
@@ -42,7 +41,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-junior-link'}
                         to={PATH.JUNIOR}
                         onClick={handleClose}
-                        className={(navData) => navData.isActive ? s.active : "" }
+                        className={({isActive}) => isActive ? s.active : "" }
                                                 // делает студент
                     >
                         Junior
@@ -52,7 +51,7 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
                         id={'hw5-junior-plus-link'}
                         to={PATH.JUNIOR_PLUS}
                         onClick={handleClose}
-                        className={(navData) => navData.isActive ? s.active : "" }
+                        className={({isActive}) => isActive ? s.active : "" }
                         // делает студент
                     >
                         Junior Plus
