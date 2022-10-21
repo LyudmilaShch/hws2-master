@@ -3,9 +3,12 @@
 }
 
 .hw {
-
+    padding: 20px;
 }
 
 .hwTitle {
+    padding: 20px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
 
 }
