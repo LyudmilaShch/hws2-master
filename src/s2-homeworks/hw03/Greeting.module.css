@@ -21,8 +21,9 @@
 }
 
 .input:focus {
+    outline: none;
     height: 30px;
-    border: 1px solid #81b4e6;
+    border: 1px solid #212A34;
     border-radius: 3px;
     }
 
