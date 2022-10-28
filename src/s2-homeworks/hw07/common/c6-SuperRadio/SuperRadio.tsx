@@ -62,6 +62,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
                 >
                       {o.value}
                   </span>
+                <br/>
             </label>
 
         ))
