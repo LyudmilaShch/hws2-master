@@ -41,10 +41,11 @@
 }
 
 .options {
-    display: inline-block;
+    /*display: inline-block;*/
     position: absolute;
     left: 240px;
     top: 330px;
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrsat', sans-serif;
+
 }
