@@ -2,6 +2,17 @@ import React from 'react'
 import {Slider, SliderProps} from '@mui/material'
 import range from '../../../../img/range.png';
 
+const ImageThumb = (props: any) => {
+    return (
+        <span {...props}>
+      <img
+          src={range}
+          alt="loading"
+          style={{borderRadius: 20}}
+      />
+    </span>
+    );
+};
 
 const SuperRange: React.FC<SliderProps> = (props) => {
     return (
@@ -23,9 +34,9 @@ const SuperRange: React.FC<SliderProps> = (props) => {
                     opacity: 1,
                     height: '4px',
                 },
-
-
             }}
+            //ThumbComponent={ImageThumb}
+            //slots={{ thumb: ImageThumb }}
             {...props} // отдаём слайдеру пропсы если они есть (value например там внутри)
         />
     )
