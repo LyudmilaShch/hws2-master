@@ -1,11 +1,30 @@
 import React from 'react'
 import {Slider, SliderProps} from '@mui/material'
+import range from '../../../../img/range.png';
+
 
 const SuperRange: React.FC<SliderProps> = (props) => {
     return (
         <Slider
             sx={{ // стили для слайдера // пишет студент
-                
+                color: '#00CC22',
+                height: 3,
+                padding: '13px 0',
+                '& .MuiSlider-thumb': {
+                    height: 25,
+                    //backgroundImage: `url("https://picsum.photos/40/40")`,
+
+                    width: 25,
+                    backgroundColor: "white",
+                    border: "2px solid #00CC22",
+                },
+                '& .MuiSlider-rail': {
+                    color: "#8B8B8B",
+                    opacity: 1,
+                    height: '4px',
+                },
+
+
             }}
             {...props} // отдаём слайдеру пропсы если они есть (value например там внутри)
         />
