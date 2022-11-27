@@ -20,11 +20,11 @@ const SuperRange: React.FC<SliderProps> = (props) => {
             sx={{ // стили для слайдера // пишет студент
                 color: '#00CC22',
                 height: 3,
+                width: 250,
                 padding: '13px 0',
                 '& .MuiSlider-thumb': {
                     height: 25,
                     //backgroundImage: `url("https://picsum.photos/40/40")`,
-
                     width: 25,
                     backgroundColor: "white",
                     border: "2px solid #00CC22",
