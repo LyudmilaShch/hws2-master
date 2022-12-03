@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {ChangeEvent, useEffect} from 'react'
 import s from './HW12.module.css'
 import s2 from '../../s1-main/App.module.css'
 import SuperSelect from '../hw07/common/c5-SuperSelect/SuperSelect'
@@ -19,11 +19,15 @@ const themes = [
 ]
 
 const HW12 = () => {
+    const themeId = useSelector<ReturnType<typeof changeThemeId>, {themeId: number}>(state => state.theme.themeId)
+
+    const dispatch = useDispatch()
     // взять ид темы из редакса
-    const themeId = 1
+    //const themeId = 1
 
-    const change = (id: any) => { // дописать функцию
+    const change = (id: ChangeEvent<HTMLSelectElement>) => { // дописать функцию
 
+        dispatch(changeThemeId(Number(id.currentTarget.value)))
     }
 
     useEffect(() => {
@@ -40,6 +44,8 @@ const HW12 = () => {
                 <SuperSelect
                     id={'hw12-select-theme'}
                     className={s.select}
+                    options={themes}
+                    onChange={change}
                     // сделать переключение тем
 
                 />
