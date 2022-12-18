@@ -3,5 +3,14 @@
 }
 
 .loading {
+    float: right;
+}
 
+.hw {
+    width: 300px;
+    min-height: 250px;
+    padding-left: 20px;
+}
+.techsBlock{
+    padding-top: 20px;
 }

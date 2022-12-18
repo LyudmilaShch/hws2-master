@@ -47,7 +47,7 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
     }
 
     return (
-        <SuperInputText onChangeText={onChangeTextCallback} {...restProps}/>
+            <SuperInputText onChangeText={onChangeTextCallback} {...restProps}/>
     )
 }
 
